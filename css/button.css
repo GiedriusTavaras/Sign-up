@@ -15,3 +15,10 @@
         cursor: pointer;
         box-shadow: 0 2px 12px #555;
     }
+.btnn {
+
+}
+    .btnn:hover {
+        color: #024daf;
+        text-shadow: 0 0px 12px #555;
+    }

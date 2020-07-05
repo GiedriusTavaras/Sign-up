@@ -1,11 +1,22 @@
 body {
-    background-color: rgb(81, 178, 198);
+    
 }
+.background {
+    background-image: url(../foto/pagrindine\ foto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    height: 100vh;
 
+}
 .container {
     display: inline-block;
-    width: 900px;
-    margin: 80px calc((100% - 900px) / 2);
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
     .container > .left {
@@ -13,37 +24,52 @@ body {
         width: 40%;
         float: left;
         background-color: #027BBD;
-    
-        position: relative;
-        right: 0;
-        top: 33px;
+        background-image: url(../foto/pagrindine\ foto.png);
+        background-size: cover;
+        background-position: right;
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 0;
+
     }
         .left > .nuotrauka {
             width: 100%;
         }
-
-        .left > .antraste {
-            display: inline-block;
+        .left > .sign {
             position: absolute;
-            top: 40px;
-            left: 40px;
+            top: 50px;
+            left: 45px;
+            font-size: 45px;
             color: white;
-            font-size: 40px;
-            font-weight: 100;
-            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            
         }
-        .left > .privacy {
+        .left > .footer {
             position: absolute;
-            bottom: 30px;
-            left: 40px;
-            color: #D4B2FF;
+            bottom: 49px;
+            left: 35px;
+            font-size: 18px;
+            color: #DEC0FF;
+            text-decoration: none;
         }
+            .footer > .privacy {
+            color: #DEC0FF;
+            text-decoration: none;
+            }
+            .footer > .zenklas {
+
+            }
+            .footer > .terms {
+                color: #DEC0FF;
+                text-decoration: none;
+            }
     .container > .right {
         display: inline-block;
         width: 60%;
         padding: 80px;
-        float: left;
-        background-color: #fff;
+        float: right;
+        background-color: white;
         position: relative;
     }
         .close {
@@ -90,3 +116,43 @@ body {
             text-decoration: none;
             font-weight: bold;
         }
+
+@media (max-width: 900px) {
+    .container {
+        width: 700px;
+    }
+        .container > .left {
+            display: inline-block;
+            width: 30%;
+        }
+        .container > .right {
+            display: inline-block;
+            width: 70%;
+        }
+}
+@media (max-width: 750px) {
+    .container {
+        width: 500px;
+    }
+    .container > .left {
+        display: inline-block;
+        width: 0%;
+    }
+    .container > .right {
+        display: inline-block;
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        width: 300px;
+    }
+        .container > .left {
+            display: inline-block;
+            width: 0%;
+        }
+        .container > .right {
+            display: inline-block;
+            width: 100%;
+        }
+}
